@@ -9,9 +9,10 @@ import { Globalstyle } from "./Components/Styles/Globalstyle";
 const App = () => {
   const theme = {
     color: {
-      bg: "#479DF3 ",
+      bg: "#3970F7",
       heading: "#F6FAFE",
     },
+    media: { mobile: "768px", tab: "998px" },
   };
   return (
     <>
