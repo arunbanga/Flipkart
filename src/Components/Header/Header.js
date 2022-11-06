@@ -24,7 +24,7 @@ const Header = () => {
 const Wrapper = styled.div`
   display: flex;
   width: 100%;
-  heigth: 10rem;
+  heigth: auto;
   padding: 1rem 0;
   justify-content: space-between;
   align-items: center;
@@ -52,17 +52,30 @@ const Wrapper = styled.div`
     position: absolute;
     left: 110px;
   }
-  @media (max-width: ${({ theme }) => theme.media.tab}) {
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    height: 70px;
+    width: 100%;
     .logo {
       position: absolute;
-      left: 60px;
+      left: 42px;
     }
     .container {
       width: 95%;
+      heigth: 60px;
       display: flex;
       align-items: center;
-      justify-content: flex-end;
-      position: relative;
+      justify-content: flex-start;
+      padding: 0 12px;
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+        span {
+          color: #f9f038;
+          font-weight: 700;
+        }
+      }
     }
   }
 `;

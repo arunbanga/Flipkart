@@ -12,7 +12,11 @@ const App = () => {
       bg: "#3970F7",
       heading: "#F6FAFE",
     },
-    media: { mobile: "768px", tab: "998px" },
+    media: {
+      mobile: "448px",
+      tab: "768px",
+      desktop: "1280px",
+    },
   };
   return (
     <>
